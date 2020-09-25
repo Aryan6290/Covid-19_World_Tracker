@@ -197,7 +197,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:fontFamily="sans-serif-light"
-                            android:text="Cases"
+                            android:text="Total Cases"
                             android:textStyle="bold"
                             android:textSize="18sp">
 
@@ -353,7 +353,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:fontFamily="sans-serif-light"
-                            android:text="Total Cases"
+                            android:text="Today's Cases"
                             android:textStyle="bold"
                             android:textSize="18sp">
 
