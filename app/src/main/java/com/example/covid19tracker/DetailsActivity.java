@@ -1,9 +1,11 @@
 package com.example.covid19tracker;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 public class DetailsActivity extends AppCompatActivity {
@@ -19,6 +21,7 @@ public class DetailsActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Covid19 Details of " + AffectedCountries.countryModelList.get(position).getCountry());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+
 
 
         tVcountry = findViewById(R.id.tvCountryName);
@@ -39,5 +42,14 @@ public class DetailsActivity extends AppCompatActivity {
         tvTodayDeaths.setText(AffectedCountries.countryModelList.get(position).getTodayDeaths());
 
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home) ;
+        {
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
